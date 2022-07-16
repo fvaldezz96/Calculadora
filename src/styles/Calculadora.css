@@ -1,0 +1,87 @@
+body {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora {
+  width: 100%;
+  max-width: 18.75rem;
+  height: 31.25rem;
+  background-color: darkmagenta;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px egba(0, 0, 0, 0.2);
+}
+.calculadora:active{
+  box-shadow: 1px 1px 7px 1px;
+}
+
+.display {
+  margin-bottom: auto;
+  padding: 16px;
+  text-align: right;
+  background-color: darkmagenta;
+  color: lightseagreen;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.display span {
+  font-size: 14px;
+  color: #858585;
+  ;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.operador {
+  margin-top: 20px;
+  display: flex;
+}
+
+.operador button {
+  flex: 1 1 0%;
+  background: color #828282;
+  ;
+  font-weight: 700;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+  height: 76%;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+  max-width: 100.333%;
+  background-color: black;
+}

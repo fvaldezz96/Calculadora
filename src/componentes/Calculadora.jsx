@@ -78,7 +78,7 @@ export default function Calculadora() {
                <button onClick={() => dataCalc("-")}>FEDE</button>
                <button onClick={() => dataCalc("-")}>FEDE</button>
                <button onClick={() => dataCalc("-")}>FEDE</button>
-
+             </div>
             <div className="digits">
                {createDigits()}
                <button onClick={() => dataCalc(".")}>.</button>

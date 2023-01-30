@@ -44,7 +44,7 @@ export default function Calculadora() {
    }
 
    const addDelete = () => {
-      if(calc == '')return ; 
+      if (calc == '') return;
       const borrado = "";
       setCalc(borrado)
    }
@@ -62,16 +62,17 @@ export default function Calculadora() {
                <button onClick={() => dataCalc("*")}>*</button>
                <button onClick={() => dataCalc("+")}>+</button>
                <button onClick={() => dataCalc("-")}>-</button>
-               <button onClick={deleteCalc}>DEL</button>
-            </div>
-            <div className="digits">
-               {createDigits()}
-               <button onClick={() => dataCalc(".")}>.</button>
-               <button onClick={() => dataCalc("0")}>0</button>
-               <button onClick={addDelete}>C</button>
-               <button onClick={calculo}>=</button>
+
+               <div className="digits">
+                  {createDigits()}
+                  <button onClick={() => dataCalc(".")}>.</button>
+                  <button onClick={() => dataCalc("0")}>0</button>
+                  <button onClick={addDelete}>C</button>
+                  <button onClick={calculo}>=</button>
+               </div>
             </div>
          </div>
       </div>
    )
 }
+
